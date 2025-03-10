@@ -1,0 +1,47 @@
+<!-- Write a JavaScript function that accepts a 
+number as a parameter and checks whether 
+it is prime or not. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font family */
+            background-color: #18f4ab; /* Background color */
+            text-align: center; /* Text alignment */
+            padding: 50px; /* Padding */
+            color: #333; /* Text color */
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+    </style>
+    <script>
+        var n = parseInt(prompt("Enter the number:"));
+        let count = 0;
+
+        if (n <= 1) {
+            document.write("<p>" + n + " is not prime.</p>");
+        }
+        else {
+            for (let i = 2; i < n; i++) {
+                if (n % i === 0) {
+                    count++;
+                    break;  // No need to check further if a divisor is found
+                }
+            }
+            if (count > 0) {
+                document.write("<p>" + n + " is not a prime number.</p>");
+            } else {
+                document.write("<p>" + n + " is a prime number.</p>");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
