@@ -1,0 +1,29 @@
+<!-- Write a JavaScript program to convert input 
+meters to kilometers. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font family */
+            background-color: #1fd196; /* Background color */
+            text-align: center; /* Text alignment */
+            padding: 50px; /* Padding */
+            color: #333; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var meter, kilometer;
+
+        // Convert meters to kilometers
+        meter = parseFloat(prompt("Enter the value in meters:"));
+        kilometer = meter / 1000;
+        document.write(meter + " meters is equal to " + kilometer + " kilometers.");
+    </script>
+</body>
+</html>
