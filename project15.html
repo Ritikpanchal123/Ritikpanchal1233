@@ -1,0 +1,59 @@
+<!-- Write a JavaScript function that changes the background color of an element when a mouse enters it.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project number :-- 15</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            height: 100px;
+            width: 100px;
+            border-radius: 30px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .Parentdiv{
+            display: flex;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            margin: 100px 510px;
+            height: 150px;
+            width: 500px;
+            background-color: #727272;
+        }
+        div{
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="Parentdiv">
+    <div>
+        <button id="ChangColor1" onclick="ChangeColorToBlack()">
+            Change Background-color to black
+        </button>
+    </div>
+    <div>
+        <button id="ChangeColor2" onclick="ChangeColorToWhite()"> 
+            Change BackGround-color to white
+        </button>
+    </div>
+</div>
+    <script>
+        
+        function ChangeColorToBlack(){
+            console.log("black");
+            document.body.style.backgroundColor = 'Black'
+        }
+        function ChangeColorToWhite(){
+            console.log("White")
+            document.body.style.backgroundColor = 'White'
+        }
+    </script>
+</body>
+</html>
