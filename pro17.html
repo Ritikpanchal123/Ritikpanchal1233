@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hours
+        let minutes
+        let seconds
+
+        let date = new Date
+
+        date.getHours(hours)
+        date.getMinutes(minutes)
+        date.getSeconds(seconds)
+
+        setInterval(() => {
+            date.setSeconds(date.getSeconds() +1)
+            let clock_time = date.toLocaleTimeString('en-IN',{hour24 :false})
+            document.write(`${clock_time}<br>`)
+            console.log(clock_time);
+            
+        },1000
+
+    )
+    function Set_time(){
+
+        let date = new Date()
+
+        let Time = date.toLocaleTimeString()
+
+        console.log(Time);
+        document.write(`${Time} <br>`)
+
+    }
+
+    let count = 0
+
+    let Clear_Time = setInterval(function(){
+         
+        count ++
+
+        if (count === 5){
+            clearInterval(Clear_Time)
+        }
+
+        let date = new Date()
+        let Time = date.toLocaleTimeString()
+
+        console.log(Time);
+        document.write(`${Time} <br>`)
+
+    },1000)
+
+    
+
+
+    
+    </script>
+</body>
+</html>
