@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program to reverse a given string.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project no :---- 10 and 11</title>
+</head>
+<body>
+    <script>
+        //revers the given string..
+        let string = prompt("Enter the String to get Revers String:---");
+        document.write(`Enter the string == ${string}<br>`);
+
+        let rev = string.split('').reverse().join('');
+
+        document.write(`Reverse of string is <u>${rev}</u><br>`);
+
+        // capitalize the frist letter of the given string
+
+        let str = prompt("Enter the string in lowercas :---<br>");
+        document.write(`Enter the string to capitalize :--${str}<br>`)
+
+        let upper_cass = str.charAt(0).toUpperCase() + str.slice(1)
+        document.write(`<u>${upper_cass}</u>`);
+    </script>
+</body>
+</html>
